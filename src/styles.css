@@ -48,9 +48,33 @@ table {
 
 /* //////////////////////////////////////////////////////// */
 
-/* * {
-	outline: greenyellow 1px solid;
-} */
+main>* {
+	outline: rgb(47, 78, 255) 1px solid;
+}
+
+.c1{
+	background-color: rgb(161, 89, 48);
+}
+
+.c2{
+	background-color: darkcyan;
+}
+
+.c3{
+	background-color: rgb(109, 35, 116);
+}
+
+.c4{
+	background-color: rgb(30, 97, 160);
+}
+
+.c5{
+	background-color: rgb(131, 34, 34);
+}
+
+.c6{
+	background-color: rgb(76, 114, 32);
+}
 
 .dark_text {
 	color: rgb(56, 56, 56);
@@ -149,6 +173,92 @@ header p {
 	width: 36px;
 	gap: 24px;
 }
+
+main,
+.main_content,
+.projects_container,
+.project,
+.project_info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+h2 {
+	font-size: 52px;
+	margin: 100px 0px 12px 0px;
+}
+
+.projects_container {
+	margin-top: 15px;
+}
+
+.project {
+	margin-bottom: 60px;
+}
+
+.project_pic {
+	height: 280px;
+	width: 90vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 50px;
+}
+
+.project_info {
+	height: 190px;
+	width: 100%;
+}
+
+.project_header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 10px;
+	height: 25%;
+	width: 100%;
+}
+
+.project_name {
+	font-size: 27px;
+	padding-left: 40px;
+}
+
+.project_icons {
+	display: flex;
+	gap: 15px;
+	padding-right: 20px;
+}
+
+.project_description {
+	height: 75%;
+	width: 100%;
+	padding-left: 55px;
+	font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.git,
+.external {
+	width: 24px;
+}
+
+
 
 @media (min-width: 600px) {
 	.content {
