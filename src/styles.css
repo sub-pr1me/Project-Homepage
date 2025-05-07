@@ -48,9 +48,9 @@ table {
 
 /* //////////////////////////////////////////////////////// */
 
-* {
-	outline: rgb(47, 78, 255) 1px solid;
-}
+/* * {
+	outline: rgb(255, 247, 135) 1px solid;
+} */
 
 .c1{
 	background-color: rgb(161, 89, 48);
@@ -129,7 +129,6 @@ body {
 
 .header_content {
 	padding: 4vh 5vw;
-
 }
 
 img {
@@ -187,6 +186,10 @@ main,
 	align-items: center;
 }
 
+main {
+	margin-bottom: 118px;
+}
+
 h2 {
 	font-size: 52px;
 	margin: 100px 0px 12px 0px;
@@ -212,7 +215,7 @@ h2 {
 
 .project_info {
 	height: 190px;
-	width: 100%;
+	width: 90vw;
 }
 
 .project_header {
@@ -237,8 +240,9 @@ h2 {
 
 .project_description {
 	height: 75%;
-	width: 100%;
-	padding-left: 55px;
+	width: 80%;
+	padding-left: 15px;
+	padding-right: 20px;
 	font-size: 20px;
 }
 
@@ -247,25 +251,90 @@ h2 {
 	width: 24px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 footer {
 	width: 100%;
-	height: 500px;
+	height: fit-content;
+	background-color: rgb(105, 55, 151);
+}
+
+.footer_content,
+.footer_text {
+	height: fit-content;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+h3 {
+	align-self: center;
+	text-align: center;
+	font-size: 52px;
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+
+footer div.footer_text {
+	margin-bottom: 60px;
+}
+
+.footer_paragraph,
+.address,
+.email {
+	margin-bottom: 35px;	
+}
+
+.footer_paragraph,
+.address,
+.phone,
+.email {
+	padding-left: 20px;
+}
+
+.footer_paragraph {
+	font-size: 27px;
+}
+
+.address,
+.phone,
+.email {
+	font-size: 20px;
+	line-height: 24px;
+	display: flex;
+	flex-direction: row;
+	align-self: flex-start;
+	align-items: center;
+}
+
+.phone,
+.email {
+	gap: 5px;
+}
+
+.footer_icons {
+	display: flex;
+	gap: 38px;
+	margin-bottom: 30px;
+}
+
+footer img.tel,
+footer img.mail {
+	filter: invert(100%);
+	width: 25px;
+	transform: translateY(10%);
+	display: none;
+}
+
+footer .git,
+footer .lin,
+footer .twi {
+	filter: invert(100%);
+	width: 45px;
+}
+
+picture {
+	font-size: 0;
 }
 
 @media (min-width: 600px) {
@@ -525,14 +594,6 @@ footer {
 		flex-direction: row;
 		width: 36px;
 	}
-
-
-
-
-
-
-
-
 
 	main {
 		margin: 0px 8vw;
