@@ -48,9 +48,9 @@ table {
 
 /* //////////////////////////////////////////////////////// */
 
-main>* {
+/* * {
 	outline: rgb(47, 78, 255) 1px solid;
-}
+} */
 
 .c1{
 	background-color: rgb(161, 89, 48);
@@ -114,7 +114,9 @@ body {
 }
 
 .content {
-	transform: translateY(-73vh);
+	position: relative;
+	z-index: 1;
+	top: -73vh;
 }
 
 .background {
@@ -240,19 +242,6 @@ h2 {
 	font-size: 20px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .git,
 .external {
 	width: 24px;
@@ -260,9 +249,16 @@ h2 {
 
 
 
+footer {
+	width: 100%;
+	height: 500px;
+}
+
+
+
 @media (min-width: 600px) {
 	.content {
-		transform: translateY(-45vh);
+		top: -45vh;
 	}
 	
 	.background {
@@ -283,7 +279,7 @@ h2 {
 	.name {
 		position: absolute;
 		font-size: 58px;
-		left: 320px;
+		left: 35vw;
 		top: 100px;
 		min-width: 390px;
 		text-shadow: 1px 1px 2px rgb(0, 0, 0);
@@ -328,6 +324,103 @@ h2 {
 	.top_icons {
 		display: none;
 	}
+
+
+
+
+
+
+
+
+
+	
+
+	main {
+		width: 100%;
+		height: fit-content;
+		justify-content: flex-start;
+	}
+
+
+	.main_content {
+		margin: 0px 8vw;
+		justify-content: flex-start;
+		width: 615px;
+		height: fit-content;
+		justify-content: flex-start;
+		align-items: center;
+	}
+
+	.projects_container {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		width: inherit;
+		min-width: 600px;
+		height: fit-content;
+		gap: 35px;
+	}
+
+	h2 {
+		font-size: 40px;
+		margin: 20px 0px 0px 0px;
+		align-self: flex-start;
+	}
+
+	.project {
+		margin: 0px 0px 20px 0px;
+	}
+
+	.project,
+	.project_pic {
+		width: 290px;
+	}
+
+	.project_pic {
+		height: 210px;
+		font-size: 40px;
+	}
+
+	.project_info {
+		height: 140px;
+		background-color: white;
+	}
+
+	.project_header {
+		padding: 10px 0px;
+	}
+
+	.project_name {
+		font-size: 20px;
+	}
+
+	.project_name,
+	.project_description {
+		padding-left: 20px;
+	}
+
+	.project_description {
+		box-sizing: border-box;
+		font-size: 16px;
+		align-self: flex-start;
+		width: inherit;
+	}
+
+
+
+
+
+
+	.git,
+	.external {
+		width: 20px;
+	}
+
+	footer {
+		font-size: 50px;
+	}
+
+
 }
 
 @media (min-width: 1200px) {
@@ -337,7 +430,7 @@ h2 {
 	}
 
 	.content {
-		transform: translateY(-99vh);
+		top: -99vh;
 		width: 100vw;
 	}
 	
