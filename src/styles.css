@@ -48,9 +48,9 @@ table {
 
 /* //////////////////////////////////////////////////////// */
 
-/* * {
+* {
 	outline: rgb(47, 78, 255) 1px solid;
-} */
+}
 
 .c1{
 	background-color: rgb(161, 89, 48);
@@ -249,12 +249,24 @@ h2 {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 footer {
 	width: 100%;
 	height: 500px;
 }
-
-
 
 @media (min-width: 600px) {
 	.content {
@@ -323,17 +335,7 @@ footer {
 
 	.top_icons {
 		display: none;
-	}
-
-
-
-
-
-
-
-
-
-	
+	}	
 
 	main {
 		width: 100%;
@@ -406,21 +408,24 @@ footer {
 		width: inherit;
 	}
 
-
-
-
-
-
 	.git,
 	.external {
 		width: 20px;
 	}
 
+
+
+
+
+
+
+
+
+
+
 	footer {
 		font-size: 50px;
 	}
-
-
 }
 
 @media (min-width: 1200px) {
@@ -473,7 +478,7 @@ footer {
 	.inner_name {
 		display: block;
 		font-size: 76.5px;
-		min-width: 530px;
+		width: fit-content;
 		text-shadow: 1px 1px 2px rgb(0, 0, 0);
 		transform: translate(2%, -115%);
 		position: relative;
@@ -483,7 +488,7 @@ footer {
 	.info {
 		background-color: white;
 		min-width: 0px;
-		width: 53.5%;
+		width: 53%;
 		min-width: 650px;
 		height: 450px;
 		margin-top: -90px;
@@ -501,7 +506,7 @@ footer {
 	}
 	
 	header p {
-		font-size: 27px;
+		font-size: 26px;
 		line-height: 36px;
 		margin-bottom: 0px;
 		padding: 0px 40px 27px 27px;
@@ -520,4 +525,92 @@ footer {
 		flex-direction: row;
 		width: 36px;
 	}
+
+
+
+
+
+
+
+
+
+	main {
+		margin: 0px 8vw;
+	}
+
+	.main_content {
+		margin: 0px 8vw;
+		justify-content: flex-start;
+		width: 1240px;
+		min-width: 85wv;
+		height: fit-content;
+		justify-content: flex-start;
+		align-items: center;
+		margin-top: 55px;
+	}
+
+	.projects_container {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		width: inherit;
+		min-width: 600px;
+		height: fit-content;
+		gap: 50px;
+	}
+
+	h2 {
+		font-size: 52px;
+		margin: 20px 0px 0px 0px;
+		align-self: flex-start;
+	}
+
+	.project {
+		margin: 0px 0px 10px 0px;
+	}
+
+	.project,
+	.project_pic {
+		width: 380px;
+	}
+
+	.project_pic {
+		height: 280px;
+		font-size: 50px;
+	}
+
+	.project_info {
+		height: 190px;
+		background-color: white;
+	}
+
+	.project_header {
+		padding: 10px 0px;
+	}
+
+	.project_name {
+		font-size: 26px;
+	}
+
+	.project_name,
+	.project_description {
+		padding-left: 20px;
+	}
+
+	.project_description {
+		box-sizing: border-box;
+		font-size: 20px;
+		align-self: flex-start;
+		width: inherit;
+	}
+
+	.project_icons {
+		gap: 22px;
+	}
+
+	.git,
+	.external {
+		width: 25px;
+	}
+
 }
