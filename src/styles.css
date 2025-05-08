@@ -49,7 +49,7 @@ table {
 /* //////////////////////////////////////////////////////// */
 
 /* * {
-	outline: rgb(255, 247, 135) 1px solid;
+	outline: rgb(70, 31, 241) 1px solid;
 } */
 
 .c1{
@@ -339,11 +339,11 @@ picture {
 
 @media (min-width: 600px) {
 	.content {
-		top: -45vh;
+		top: -58vh;
 	}
 	
 	.background {
-		height: 45vh;
+		height: 58vh;
 		transform: rotate(-15deg);
 	}
 
@@ -354,7 +354,7 @@ picture {
 	
 	.header_content {
 		display: block;
-		padding: 4vh 10vw;
+		padding: 5vh 10vw;
 	}
 	
 	.name {
@@ -381,7 +381,7 @@ picture {
 	
 	.info {
 		background-color: white;
-		min-width: 485px;
+		min-width: 510px;
 		width: 78vw;
 		height: fit-content;
 		box-shadow: 0px 3px 10px 3px rgba(88, 86, 86, 0.329);
@@ -414,7 +414,7 @@ picture {
 
 
 	.main_content {
-		margin: 0px 8vw;
+		margin: 0px 0px 100px 0px;
 		justify-content: flex-start;
 		width: 615px;
 		height: fit-content;
@@ -453,6 +453,7 @@ picture {
 	}
 
 	.project_info {
+		width: inherit;
 		height: 140px;
 		background-color: white;
 	}
@@ -482,18 +483,79 @@ picture {
 		width: 20px;
 	}
 
-
-
-
-
-
-
-
-
-
-
 	footer {
+		height: 66vh;
 		font-size: 50px;
+	}
+
+	.footer_content {
+		flex-direction: row;
+		height: fit-content;
+		width: 90vw;
+		justify-content: center;
+		align-items: flex-start;
+		padding: 40px 40px 0px 50px;
+		gap: 80px;
+	}
+
+	footer div.footer_text {
+		margin-bottom: 0px;
+		margin-top: 50px;
+		width: fit-content;
+	}
+
+	h3 {
+		align-self: flex-start;
+		font-size: 40px;
+		margin-top: 0px;
+		margin-bottom: 20px;
+	}
+
+	.footer_paragraph {
+		font-size: 20px;
+		max-width: 300px;
+		align-self: flex-start;		
+	}
+
+	.footer_paragraph,
+	.address,
+	.phone,
+	.email {
+		padding-left: 0px;
+	}
+
+	.address {
+		margin-bottom: 20px;
+	}
+	
+	.phone {
+		margin-bottom: 10px;
+	}
+
+	.email {
+		margin-bottom: 25px;
+	}
+
+	footer img.tel,
+	footer img.mail {
+		display: block;
+		height: 30px;
+		margin-right: 5px;
+	}
+
+	.footer_icons {
+		align-self: flex-start;
+		gap: 30px;
+	}
+
+	footer .git,
+	footer .lin,
+	footer .twi {
+		width: 35px;
+	}
+
+	footer picture img {
+		transform: translateX(%);
 	}
 }
 
@@ -564,12 +626,15 @@ picture {
 		padding-bottom: 30px;
 		transform: translateY(2%);
 		box-shadow: 0px 3px 10px 3px rgba(88, 86, 86, 0.329);
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 	}
 	
 	h1 {
 		font-size: 52px;
 		text-align: left;
-		margin: 27px 0px 30px 0px;
+		margin: 27px 0px 0px 0px;
 		padding: 18px 18px 0px 27px;
 		transform: translateX(0%);
 	}
@@ -579,14 +644,14 @@ picture {
 		line-height: 36px;
 		margin-bottom: 0px;
 		padding: 0px 40px 27px 27px;
+		justify-self: flex-start;
 		
 	}
 
 	.icons_container {
-		justify-self: flex-end;
-		padding: 0px 54px 27px 27px;
-		margin-top: 36px;
+		padding: 0px 54px 0px 27px;
 		gap: 25px;
+		align-self: flex-end;
 	}
 	
 	.top_icons {
@@ -641,6 +706,7 @@ picture {
 	}
 
 	.project_info {
+		width: inherit;
 		height: 190px;
 		background-color: white;
 	}
