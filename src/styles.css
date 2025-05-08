@@ -48,9 +48,23 @@ table {
 
 /* //////////////////////////////////////////////////////// */
 
-/* * {
-	outline: rgb(70, 31, 241) 1px solid;
-} */
+@font-face {
+	font-family: titillium;
+	src: url(fonts/TitilliumWeb-Regular.ttf);
+}
+
+@font-face {
+	font-family: bigshoulders;
+	src: url(fonts/BigShoulders_24pt-Bold.ttf);
+}
+
+body * {
+	font-family: titillium;
+}
+
+body .big_font {
+	font-family: bigshoulders;
+}
 
 .c1{
 	background-color: rgb(161, 89, 48);
